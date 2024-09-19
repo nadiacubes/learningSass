@@ -482,4 +482,42 @@ footer p {
   color: #ffffff;
 }
 
+footer nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+footer nav ul li a {
+  display: block;
+  text-align: center;
+  padding: 5px 0;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+}
+
+footer nav ul li a:hover, footer nav ul li a.active {
+  color: #18b304;
+}
+
+.copyright {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  footer .container nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  footer .container nav ul li a {
+    padding: 25px;
+  }
+}
+
+@media (min-width: 992px) {
+  footer .container nav ul li a {
+    padding: 45px;
+  }
+}
+
 /*# sourceMappingURL=theme.css.map */

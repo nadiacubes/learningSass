@@ -2,6 +2,9 @@
 $footer-bg: $purple;
 $footer-color: $white;
 
+$footer-font: $josefin;
+$footer-hover-color: $green;
+
 
 footer{
     padding: 30px 0;
@@ -10,6 +13,68 @@ footer{
 
 footer a,
 footer p{
-  color: $footer-color;  
+    color: $footer-color;
+}
+
+footer{
+    nav{
+        ul{
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 30px;
+
+            li{
+                a{
+                    display: block;
+                    text-align: center;
+                    padding: 5px 0;
+                    font-family: $footer-font;
+                    font-weight: $font-bold;
+                    &:hover,
+                        &.active{
+                        color: $footer-hover-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.copyright{
+    text-align: center;
+}
+
+@media(min-width:768px){
+    footer{
+        .container{
+            nav{
+                ul{
+                    display: flex;
+                    justify-content: center;
+                    li{
+                        a{
+                            padding: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(min-width:992px){
+    footer{
+        .container{
+            nav{
+                ul{
+                    li{
+                        a{
+                            padding: 45px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
