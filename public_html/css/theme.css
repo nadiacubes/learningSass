@@ -11,8 +11,12 @@
 }
 
 .btn-default {
-  background-color: #444444;
+  background-color: rgba(68, 68, 68, 0.8);
   color: #ffffff;
+}
+
+.btn-default:hover {
+  background-color: #e6e6e6;
 }
 
 .btn-danger {
@@ -20,9 +24,17 @@
   color: #ffffff;
 }
 
+.btn-danger:hover {
+  background-color: #bd0006;
+}
+
 .btn-success {
   background-color: #18b304;
   color: #ffffff;
+}
+
+.btn-success:hover {
+  background-color: #118103;
 }
 
 .btn-warning {
@@ -30,14 +42,26 @@
   color: #ffffff;
 }
 
+.btn-warning:hover {
+  background-color: #c56104;
+}
+
 .btn-info {
   background-color: #09e0b1;
   color: #000000;
 }
 
+.btn-info:hover {
+  background-color: #07af8a;
+}
+
 .btn-dark {
   background-color: #000000;
   color: #ffffff;
+}
+
+.btn-dark:hover {
+  background-color: #1a1a1a;
 }
 
 /*FONT FAMILY*/
@@ -448,7 +472,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover, header nav ul li a.active {
-  color: #18b304;
+  color: #25e807;
 }
 
 @media (min-width: 768px) {
@@ -531,7 +555,7 @@ footer nav ul li a {
 }
 
 footer nav ul li a:hover, footer nav ul li a.active {
-  color: #18b304;
+  color: #25e807;
 }
 
 footer .copyright {

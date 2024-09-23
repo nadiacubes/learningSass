@@ -31,7 +31,7 @@ footer{
 
                     &:hover,
                         &.active{
-                        color: $footer-link-hover;
+                        color: lighten(complement($footer-bg), 15%);
                     }
                 }
             }
