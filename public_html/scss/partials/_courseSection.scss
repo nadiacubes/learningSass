@@ -8,13 +8,13 @@ $tbody-hover-bg: darken($light-grey, 15%);
 
 
 .course-section{
-    padding: 50px 0;
+    @include styleSection(30px, 30px, transparent);
 
     table{
         border: $table-border;
         border-collapse: collapse;
         width: 100%;
-        
+
         caption{
             text-align: left;
             font-style: italic;
@@ -32,8 +32,9 @@ $tbody-hover-bg: darken($light-grey, 15%);
                 border: $thead-border-color;
             }
 
-        }//thead end
-        
+        }
+        //thead end
+
         tbody{
             tr{
                 &:nth-last-of-type(even){
