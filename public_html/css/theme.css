@@ -12,10 +12,10 @@ $btn-dark: $black;*/
   display: inline-block;
   padding: 10px 25px;
   border: none;
-  border-radius: 0px;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 0px;
-  -o-border-radius: 0px;
+  border-radius: 5px 0 5px 0;
+  -moz-border-radius: 5px 0 5px 0;
+  -webkit-border-radius: 5px 0 5px 0;
+  -o-border-radius: 5px 0 5px 0;
   cursor: pointer;
 }
 
@@ -520,6 +520,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 700;
   color: #8a059e;
+  margin-top: 0;
 }
 
 header {
@@ -598,11 +599,40 @@ header nav ul li a:hover, header nav ul li a.active {
   background-color: #ffffff;
 }
 
-.comment-img img {
-  border-radius: 0px;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 0px;
-  -o-border-radius: 0px;
+.comment-list {
+  list-style: none;
+  padding: 0;
+}
+
+.comment-list .comment-item {
+  display: flex;
+}
+
+.comment-list .comment-item .comment-img {
+  flex: 0 0 50px;
+}
+
+.comment-list .comment-item .comment-img img {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.comment-list .comment-item .comment-body {
+  padding-left: 10px;
+}
+
+/*.comment-img{
+    img{
+        @include radius(50%);
+    }
+}
+*/
+@media (min-width: 768px) {
+  .comment-section .comment-list .comment-img {
+    flex: 0 0 90px !important;
+  }
 }
 
 .course-section {
@@ -646,6 +676,41 @@ header nav ul li a:hover, header nav ul li a.active {
 .contact-section {
   padding: 150px 0 150px;
   background-color: #ffffff;
+  background-image: url(assets/contact.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+.contact-section h2 {
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contact-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form .form-group label {
+  display: block;
+}
+
+.contact-form .form-group .form-control {
+  display: block;
+  width: 100%;
+  border: 1px solid #000000;
+  padding: 0px 10px;
+  line-height: 4rem;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 
 footer {
